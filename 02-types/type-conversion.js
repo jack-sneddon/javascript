@@ -21,12 +21,17 @@ let num = Number(str)
 console.log(num + " " + `${typeof num}`)
 let num2 = Number("12a waffa")
 console.log(num2)
+// shorthand str to number
+let num_a = "1"
+let num_b = "3"
+console.log(+num_a + +num_b);  // same thing as console.log(Number(num_a) + Number(num_b))
 
 console.log("\n --> number")
 console.log( "(str --> Number) = " + Number("   123   ") ); // 123
 console.log( "(str --> Number) = " + Number("123z") );      // NaN (error reading a number at "z")
 console.log( "(true --> Number) = " + Number(true) );        // 1
 console.log( "(false --> Number) = " + Number(false) );       // 0
+
 
 // BOOLEAN
 // Values that are intuitively “empty”, like 0, an empty string, null, undefined, and NaN, become false.

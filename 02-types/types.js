@@ -81,4 +81,48 @@ console.log(bar);
 
 console.log("\n----- OBJECT -----")
 
+console.log("\n----- FALSEY -----")
+// A falsy (sometimes written falsey) value is a value that is considered false when encountered in a Boolean context.
+console.log("false = " + false);
+console.log("false = " + 0);
+console.log("false = " + null);
+console.log("false = " + undefined);
+console.log("false = " + "-0");
+console.log("false = " + "0n");
+console.log("false = " + NaN);
+console.log("false = " + '""');
+
+if (false)  {
+    console.error("should never reach me!");
+}
+if (0) {
+    console.error("should never reach me!");
+}
+if (null) {
+    console.error("should never reach me!");
+}
+if (undefined) {
+    console.error("should never reach me!");
+}
+if (-0) {
+    console.error("should never reach me!");
+}
+if (0n) {
+    console.error("should never reach me!");
+}
+if (NaN) {
+    console.error("should never reach me!");
+}
+if ("") {
+    console.error("should never reach me!");   
+}
+
+
+
+
+
+
+
+
+
 
