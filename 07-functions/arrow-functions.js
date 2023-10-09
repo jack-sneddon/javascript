@@ -1,5 +1,23 @@
 // Arrow functions:
-/* 
+// these are anononomous fucntions.
+
+/**** good example
+*/
+const hobbies=['Sports', 'Cooking', 'Reading']
+// look up based on the index - nothing new...
+console.log(hobbies[0])
+//now for the cool part - get the index of Sports by writing my anonomyous function
+const index = hobbies.findIndex((item) => {
+   return item === 'Sports'
+});
+
+console.log(index)
+
+const index2 = hobbies.findIndex((item2) => item2 === 'Sports');
+
+console.log(index2)
+
+/********* 
   let func = function(arg1, arg2, ...argN) {
     return expression;
   };
