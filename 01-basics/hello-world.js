@@ -1,5 +1,5 @@
-var message = "hello javascript world!"
+const message = "hello javascript world!"
 console.log(message)
 
-message = "hi back"
-console.log(message)
+const response = "hi back"
+console.log(response)

@@ -30,8 +30,43 @@ function sum(a, b) {
     return a + b;
 }
 
+// Function parameters
+// =====
+function handleTimeout() {
+    console.log("1 - timed out")
+}
+const handleTimeout2 = () => {
+    console.log("2 - timed out")
+}
+
+function greeter(greetFn) {
+    greetFn();
+}
+
+function init() {
+    function greet() {
+        console.log("Hello!");
+    }
+
+    greet();
+}
+
+
 showMessage('joe', "hello there!");
 showMessage2('sally');
 showMessage2('bob');
 console.log(sum(3 + 4));
+
+// pass functions as values - note i'm not using the parameters, but the name only
+setTimeout(handleTimeout, 2000);
+setTimeout(handleTimeout2, 3000);
+setTimeout(() => {
+    console.log("3 - timed out")
+}, 4000);
+
+// passing in functions isn't limited to as values
+greeter(() => console.log("Hi"));
+
+// functions within functions - way to define scope
+init();
 

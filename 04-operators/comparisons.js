@@ -2,6 +2,7 @@
 console.log(`${'A' == 'A'}`)
 console.log(`${'Z' > 'A'}`)
 console.log(`${'Bee' > 'Be'}`)
+
 // unicode comparison - useful to know when sorting
 console.log(`${'a' > 'A'}`)
 console.log(`${'A' > 'a'}`)
@@ -15,3 +16,17 @@ console.log(`${null === undefined}`);
 // tips
 // 1. Treat any comparison with undefined/null except the strict equality === with exceptional care.
 // 2. Don’t use comparisons >= > < <= with a variable which may be null/undefined, unless you’re really sure of what you’re doing. If a variable can have these values, check for them separately.
+
+const myString = "hello"
+
+if (myString === 'hello') {
+    console.log("hello works")
+}
+else if (myString === "world") {
+    console.log("world works")
+}
+else {
+    console.log("nothing works")
+}
+
+
